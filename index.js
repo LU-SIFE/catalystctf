@@ -34,6 +34,7 @@ var flags = [
 
 function checkAnswer(flag_index) {
     var input = document.getElementById('input').value;
+    if (input == "cat{solomon}") {console.log("it worked")}
     
     if (input == flags[flag_index]) {
         alert('Nice! You got it :D');
