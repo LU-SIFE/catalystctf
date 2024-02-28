@@ -10,8 +10,7 @@ var hashes = [
 
 
 function checkAnswer(hash_index) {
-    var input = getElementById('input');
-    console.log(input);
+    var input = document.getElementById('input').value;
     
     if (sha256(input) == hashes[hash_index]) {
         alert('Nice! You got it :D');
