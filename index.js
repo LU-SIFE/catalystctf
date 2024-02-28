@@ -8,7 +8,11 @@ var hashes = [
     "142efa286b4b2cd740cf40397b271d246eaf998e76a0b46ca28e4ed0c2d77043"
 ];
 
-function checkAnswer(input, hash_index) {
+
+function checkAnswer(hash_index) {
+    var input = getElementById('input');
+    console.log(input);
+    
     if (sha256(input) == hashes[hash_index]) {
         alert('Nice! You got it :D');
     } else {
