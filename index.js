@@ -34,9 +34,8 @@ var flags = [
 
 function checkAnswer(flag_index) {
     var input = document.getElementById('input').value;
-    if (sha256(input) == "cat{solomon}") {console.log("it worked")}
     
-    if (input == flags[flag_index]) {
+    if (sha256(input) == flags[flag_index]) {
         alert('Nice! You got it :D');
     } else {
         alert('Try Again...');
