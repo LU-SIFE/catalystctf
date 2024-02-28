@@ -1,0 +1,28 @@
+/* COLOR VARIABLES */
+:root {
+	--col1: #00ff00;
+}
+
+
+html, body {
+    margin: 0;
+    padding: 0;
+    background-color: #1f1f1f;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+nav {
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    height: fit-content;
+    width: fit-content;
+    border: 1px solid var(--col1);
+    
+}
+
+nav a {
+    text-decoration: none;
+    color: var(--col1);
+    padding: 10px;
+}
