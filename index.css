@@ -55,6 +55,8 @@ nav a {
     color: var(--col1);
     padding: 12px;
     font-size: 1.25em;
+
+    transition: color 0.15s, background-color 0.15s;
 }
 
 nav a:hover {
