@@ -10,8 +10,11 @@ html, body {
     background-color: #1f1f1f;
     background-image: url("files/GrayLogo.png");
     background-size: 50%;
+    background-repeat: no-repeat;
+    background-position: center;
     font-family: 'Courier New', Courier, monospace;
-    
+    -webkit-backdrop-filter: blur(5px);
+    backdrop-filter: blur(5px);
     color: var(--col1);
 }
 
