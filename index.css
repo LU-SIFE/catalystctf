@@ -73,6 +73,17 @@ nav a:hover {
     color: #1f1f1f;
 }
 
+a {
+    text-decoration: none;
+    color: var(--col1);
+    font-size: 1.25em;
+    transition: color 0.15s, background-color 0.15s;
+}
+a:hover {
+    background-color: var(--col1);
+    color: #1f1f1f;
+}
+
 nav div {
     padding-top: 12px;
     width: 50%;
