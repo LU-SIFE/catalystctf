@@ -10,6 +10,8 @@
     background-position: center top;
     -webkit-filter: blur(5px);
     filter: blur(5px);
+    z-index: 1;
+    display: block;
 }
 
 html, body {
@@ -99,4 +101,5 @@ button {
     margin-top:1em;
     font-size: 1.4em;
     max-width: 50%;
+    z-index: 99999;
 }
