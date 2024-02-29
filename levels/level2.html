@@ -58,13 +58,21 @@
 </body>
 </html>
 <script src="../encrypt.js"></script>
+<script src="../utils.js"></script>
 <script>
     var flag = ["b79268b1ab278816a9c2925a73acda0442761e40ab2ceb136864b9cba4de938a"]
-
+    var sillyflag1 = "74701986ec5ad7dc7d53339559e9274ae4954c4bdd558b813effa73c26966e73"
+    var sillyflag2 = "c642f58f5568f04ba947c7de99133cfe62791d3d8158c5b5b0267d36637267ab"
+    var acursedb64 = loadFile("../acursed.txt");
+    var beauty = b64_to_utf8(acursedb64);
     function checkAnswer(flag_index) {
         var input = document.getElementById('input').value;
         if (sha256(input) == flag[flag_index]) {
             alert('Nice! You got it! :D');
+        } else if (sha256(input) == sillyflag1) {
+            alert('Haha very funny');
+        } else if (sha256(input) == sillyflag2) {
+            alert(beauty);
         } else {
             alert('Try Again...');
         }

@@ -31,12 +31,21 @@ var flags = [
     "142efa286b4b2cd740cf40397b271d246eaf998e76a0b46ca28e4ed0c2d77043"
 ];
 
+var sillyflag1 = "74701986ec5ad7dc7d53339559e9274ae4954c4bdd558b813effa73c26966e73"
+var sillyflag2 = "c642f58f5568f04ba947c7de99133cfe62791d3d8158c5b5b0267d36637267ab"
+
+var acursedb64 = loadFile("../acursed.txt");
+var beauty = b64_to_utf8(acursedb64)
 
 function checkAnswer(flag_index) {
     var input = document.getElementById('input').value;
     
     if (sha256(input) == flags[flag_index]) {
         alert('Nice! You got it :D');
+    } else if (sha256(input) == sillyflag) {
+            alert('Haha very funny');
+    } else if ((sha256(input) == sillyflag) && (flag_index == 1)) {
+            alert(beauty);
     } else {
         alert('Try Again...');
     }
