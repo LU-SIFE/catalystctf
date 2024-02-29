@@ -50,4 +50,16 @@
 </body>
 </html>
 <script src="../encrypt.js"></script>
-<script src="../index.js"></script>
+<script>
+    var flag = ["681b82ce0578785b3ea5203684529f79271592bf3a9435d6c8f0d2424f040a73"]
+
+    function checkAnswer(flag_index) {
+        var input = document.getElementById('input').value;
+        if (sha256(input) == flag[flag_index]) {
+            alert('Nice! You got it! :D');
+        } else {
+            alert('Try Again...');
+        }
+    }
+</script>
+<!--script src="../index.js"></script-->
