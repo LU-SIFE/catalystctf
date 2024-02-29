@@ -59,14 +59,17 @@
     
 </body>
 </html>
+<script src="../utils.js"></script>
 <script src="../encrypt.js"></script>
 <script>
     var flag = ["bf3c6ba35f645d425087912eb53c3f4f15b8b42f0f5af5a0d24888ea04bece57"]
-
+    var sillyflag = "74701986ec5ad7dc7d53339559e9274ae4954c4bdd558b813effa73c26966e73"
     function checkAnswer(flag_index) {
         var input = document.getElementById('input').value;
         if (sha256(input) == flag[flag_index]) {
             alert('Nice! You got it! :D');
+        } else if (sha256(input) == sillyflag) {
+            alert('Haha very funny');
         } else {
             alert('Try Again...');
         }
