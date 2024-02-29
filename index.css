@@ -1,6 +1,7 @@
 /* COLOR VARIABLES */
 :root {
 	--col1: #00ff00;
+	--col2: #00cc00;
 }
 
 .background_image {
@@ -75,12 +76,12 @@ nav a:hover {
 
 a {
     text-decoration: none;
-    color: var(--col1);
+    color: var(--col2);
     font-size: 1.25em;
     transition: color 0.15s, background-color 0.15s;
 }
 a:hover {
-    background-color: var(--col1);
+    background-color: var(--col2);
     color: #1f1f1f;
 }
 
