@@ -9,6 +9,7 @@ html, body {
     padding: 0;
     background-color: #1f1f1f;
     background-image: url("files/GrayLogo.png");
+    background-size: 2084px 2082px;
     font-family: 'Courier New', Courier, monospace;
     
     color: var(--col1);
