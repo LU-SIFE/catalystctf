@@ -49,7 +49,7 @@
         </p>
     </div>
 
-    <input type="text" id="input" placeholder="cat{yourflaghere}">
+    <input type="text" id="input" placeholder="cat{flag}">
     <button onclick="checkAnswer(0)">Submit</button>
     
 </body>
@@ -58,7 +58,7 @@
 <script src="../encrypt.js"></script>
 <script>
     var flag = ["ab61686f0c030c79bb4a26480ea823fefb77f75cd580c45a75d1d23eb94d780f"]
-    var sillyflag = "74701986ec5ad7dc7d53339559e9274ae4954c4bdd558b813effa73c26966e73"
+    var sillyflag = "23f298bee3c69221e693cd5c1c5ea97a794f34b607bd0ec820ddeda316654142"
     var acursedb64 = loadFile("../acursed.txt");
     var beauty = b64_to_utf8(acursedb64);
     function checkAnswer(flag_index) {
